@@ -1,6 +1,6 @@
 # Playground Repository
 
-![Badge for GitHub last commit](https://img.shields.io/github/last-commit/g-broadhead/console.log?style=flat&logo=appveyor) ![Badge for GitHub commit activity](https://img.shields.io/github/commit-activity/w/g-broadhead/console.log?color=purple)
+![Badge for GitHub last commit](https://img.shields.io/github/last-commit/Harrison-Reich/practiceStuff?style=flat&logo=appveyor) ![Badge for GitHub commit activity](https://img.shields.io/github/commit-activity/w/Harrison-Reich/practiceStuff?color=purple)
 
   
   ## Table of Content
