@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <title>Every Day Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Jumbotron display with current date -->
+    <header class="jumbotron">
+        <h1 class="display-3">Every Day Planner</h1>
+        <br>
+        <h1 id="currentDate" class="currentDateLabel"></h1>
+    </header>
+
+    <!-- Timeblocks (rows) -->
+    <div class="container time-block">
+        <div class="row">
+            <div class="col-sm-3 hour">9:00 AM</div>
+            <div class="col-sm-6 inputField" id='9'>
+              <input id='textarea_9'></input>
+            </div>
+            <div class="col-sm-3 saveBtn" onClick="saveTodo(9)">SAVE</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3 hour">10:00 AM</div>
+            <div class="col-sm-6 inputField" id='10'>
+              <input id="textarea_10"></input>
+            </div>
+            <div class="col-sm-3 saveBtn" onClick="saveTodo(10)">SAVE</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3 hour">11:00 AM</div>
+            <div class="col-sm-6 inputField" id='11'>
+              <input id="textarea_11"></input>
+            </div>
+            <div class="col-sm-3 saveBtn"onClick="saveTodo(11)">SAVE</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3 hour">12:00 AM</div>
+            <div class="col-sm-6 inputField" id='12'>
+              <input id="textarea_12"></input>
+            </div>
+            <div class="col-sm-3 saveBtn"onClick="saveTodo(12)">SAVE</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3 hour">1:00 PM</div>
+            <div class="col-sm-6 inputField" id='13'>
+              <input id="textarea_13"></input>
+            </div>
+            <div class="col-sm-3 saveBtn"onClick="saveTodo(13)">SAVE</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3 hour">2:00 PM</div>
+            <div class="col-sm-6 inputField" id='14'>
+              <input id="textarea_14"></input>
+            </div>
+            <div class="col-sm-3 saveBtn"onClick="saveTodo(14)">SAVE</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3 hour">3:00 PM</div>
+            <div class="col-sm-6 inputField" id='15'>
+              <input id="textarea_15"></input>
+            </div>
+            <div class="col-sm-3 saveBtn"onClick="saveTodo(15)">SAVE</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3 hour">4:00 PM</div>
+            <div class="col-sm-6 inputField" id='16'>
+              <input id="textarea_16"></input>
+            </div>
+            <div class="col-sm-3 saveBtn"onClick="saveTodo(16)">SAVE</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3 hour">5:00 PM</div>
+            <div class="col-sm-6 inputField" id='17'>
+              <input id="textarea_17"></input>
+            </div>
+            <div class="col-sm-3 saveBtn" onClick="saveTodo(17)">SAVE</div>
+          </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
