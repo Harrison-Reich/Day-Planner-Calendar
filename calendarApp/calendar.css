@@ -6,9 +6,11 @@
 }
 
 #calendarHeader {
+    margin-top: 10px;
     display: flex;
+    justify-content: space-around;
 }
 
 p {
-    display: inline;
+    display: inline-flex;
 }
