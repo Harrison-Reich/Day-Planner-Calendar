@@ -1,0 +1,14 @@
+#calendarContainer {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    margin: 300px;
+}
+
+#calendarHeader {
+    display: flex;
+}
+
+p {
+    display: inline;
+}
