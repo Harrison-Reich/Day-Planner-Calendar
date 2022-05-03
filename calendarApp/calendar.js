@@ -7,8 +7,10 @@ let monthChosen = new Date().getMonth();
 
 
 function getNumberOfDays (year, month) {
-    let numberOfDays = new Date(year, month, 0).getDate();
+    let numberOfDays = new Date(year, month + 1, 0).getDate();
     return numberOfDays;
 }
 
-getNumberOfDays()
+function renderCalendar() {
+    
+}
