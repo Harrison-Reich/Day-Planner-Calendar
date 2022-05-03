@@ -7,6 +7,7 @@
 
 #calendarHeader {
     margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: space-around;
 }
@@ -16,7 +17,7 @@ span {
 }
 
 .month-year {
-    display: inline-flex;
+    display: inline;
 }
 
 #daysContainer {
