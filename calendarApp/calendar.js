@@ -26,12 +26,20 @@ function getNumberOfDays (year, month) {
     return numberOfDays;
 }
 
-function renderCalendar() {
+function renderCalendar(getNumberOfDays) {
     let yearPTag = document.getElementById('year');
     yearPTag.innerText = yearChosen;
     let monthName = months[monthChosen];
     let monthPTag = document.getElementById('month');
     monthPTag.innerText = monthName
+
+    for (let i = 0; i < getNumberOfDays; i++) {
+        let dayPTag = document.createElement('p');
+        let dayText = document.createTextNode(i.toString());
+        dayPTag.appendChild(dayText);
+        let date = monthName + " " + i.toString() + ", " + yearChosen
+        console.log(date);
+    }
 }
 
-renderCalendar();
+renderCalendar(getNumberOfDays(yearChosen, monthChosen));
