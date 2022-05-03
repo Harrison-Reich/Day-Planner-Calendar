@@ -48,4 +48,8 @@ function renderCalendar(getNumberOfDays) {
     }
 }
 
+function changeMonth(addMinus) {
+    
+}
+
 renderCalendar(getNumberOfDays(yearChosen, monthChosen));
