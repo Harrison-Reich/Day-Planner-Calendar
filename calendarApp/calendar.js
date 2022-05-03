@@ -44,6 +44,7 @@ function renderCalendar(getNumberOfDays) {
         let date = monthName + " " + i.toString() + ", " + yearChosen
         let dayOfWeek = new Date(date).getDay(); 
         console.log(dayOfWeek);
+        document.getElementById(dayOfWeek.toString()).appendChild(dayPTag)
     }
 }
 
