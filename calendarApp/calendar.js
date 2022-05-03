@@ -2,6 +2,13 @@
 // get the number of days in a month
 // new Date() is a javascript constructor function
 
-let year = new Date().getFullYear();
-let month = new Date().getMonth();
+let yearChosen = new Date().getFullYear();
+let monthChosen = new Date().getMonth();
 
+
+function getNumberOfDays (year, month) {
+    let numberOfDays = new Date(year, month, 0).getDate();
+    return numberOfDays;
+}
+
+getNumberOfDays()
