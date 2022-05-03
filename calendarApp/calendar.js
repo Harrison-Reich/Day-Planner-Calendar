@@ -12,5 +12,7 @@ function getNumberOfDays (year, month) {
 }
 
 function renderCalendar() {
-    
+    let yearPTag = document.getElementById('year');
+    yearPTag.innerText = yearChosen;
+    let monthPTag = document.getElementById('month');
 }
