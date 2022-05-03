@@ -33,7 +33,7 @@ function renderCalendar(getNumberOfDays) {
     let monthPTag = document.getElementById('month');
     monthPTag.innerText = monthName
 
-    for (let i = 0; i < getNumberOfDays; i++) {
+    for (let i = 1; i <= getNumberOfDays; i++) {
         let dayPTag = document.createElement('p');
         let dayText = document.createTextNode(i.toString());
         dayPTag.appendChild(dayText);
