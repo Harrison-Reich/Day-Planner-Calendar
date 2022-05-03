@@ -36,7 +36,7 @@ function renderCalendar(getNumberOfDays) {
     let monthPTag = document.getElementById('month');
     monthPTag.innerText = monthName
 // for loop starting at 1 (beginning of each month), ending based on getNumberOfDays selected month length
-// creating p tags and appending 
+// creating p tags and appending days
     for (let i = 1; i <= getNumberOfDays; i++) {
         let dayPTag = document.createElement('p');
         let dayText = document.createTextNode(i.toString());
