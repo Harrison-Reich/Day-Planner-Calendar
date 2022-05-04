@@ -31,8 +31,8 @@ function getNumberOfDays (year, month) {
 // function to render calendar based on previous function (getNumberOfDays) & generate days as p tag elements based on the selected month's length
 function renderCalendar(getNumberOfDays, newYear, newMonth) {
     let yearPTag = document.getElementById('year');
-    yearPTag.innerText = yearChosen;
-    let monthName = months[monthChosen];
+    yearPTag.innerText = newYear;
+    let monthName = months[newMonth];
     let monthPTag = document.getElementById('month');
     monthPTag.innerText = monthName
 // for loop starting at 1 (beginning of each month), ending based on getNumberOfDays selected month length
@@ -41,7 +41,7 @@ function renderCalendar(getNumberOfDays, newYear, newMonth) {
         let dayPTag = document.createElement('p');
         let dayText = document.createTextNode(i.toString());
         dayPTag.appendChild(dayText);
-        let date = monthName + " " + i.toString() + ", " + yearChosen
+        let date = monthName + " " + i.toString() + ", " + newYear
         let dayOfWeek = new Date(date).getDay(); 
         console.log(dayOfWeek);
         document.getElementById(dayOfWeek.toString()).appendChild(dayPTag)
@@ -62,11 +62,21 @@ function changeMonth(addMinus) {
                 monthChosen += 1;
                 renderCalendar(getNumberOfDays(monthChosen, yearChosen), yearChosen, monthChosen);
             }
+            else {
+                monthChosen = 0;
+                renderCalendar(getNumberOfDays(monthChosen, yearChosen), yearChosen, monthChosen);
+            }
         }
     }
 
 function changeYear(addMinus) {
-
+    if (addMinus === 'minus') {
+        yearChosen -= 1;
+        renderCalendar(getNumberOfDays(monthChosen, yearChosen), yearChosen, monthChosen);
+    } else {
+        yearChosen += 1;
+        renderCalendar(getNumberOfDays(monthChosen, yearChosen), yearChosen, monthChosen);
+    }
 }
 
-renderCalendar(getNumberOfDays(yearChosen, monthChosen));
+renderCalendar(getNumberOfDays(yearChosen, monthChosen), yearChosen, monthChosen);
