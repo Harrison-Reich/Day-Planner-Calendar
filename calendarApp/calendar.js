@@ -49,11 +49,19 @@ function renderCalendar(getNumberOfDays) {
 }
 
 function changeMonth(addMinus) {
+    if (addMinus === 'minus') {
+            if (monthChosen !== 0){
+                monthChosen -= 1;
+                renderCalendar(getNumberOfDays(monthChosen, yearChosen)); 
+            } else {
+                monthChosen === 11;
+        }
 
+    }
 }
 
 function changeYear(addMinus) {
-    
+
 }
 
 renderCalendar(getNumberOfDays(yearChosen, monthChosen));
