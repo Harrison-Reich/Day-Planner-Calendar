@@ -20,7 +20,7 @@ span {
     display: inline;
 }
 
-#daysContainer {
+.content {
     display: flex;
     justify-content: space-around;
 }
