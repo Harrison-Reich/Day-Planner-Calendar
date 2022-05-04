@@ -49,6 +49,10 @@ function renderCalendar(getNumberOfDays) {
 }
 
 function changeMonth(addMinus) {
+
+}
+
+function changeYear(addMinus) {
     
 }
 
