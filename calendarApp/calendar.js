@@ -35,6 +35,10 @@ function renderCalendar(getNumberOfDays, newYear, newMonth) {
     let monthName = months[newMonth];
     let monthPTag = document.getElementById('month');
     monthPTag.innerText = monthName
+    let dayColumns = document.getElementsByClassName('dayColumn');
+    for (let d = 0; d < dayColumns.length; d++) {
+        dayColumns[d].innerHTML = ""; 
+    }
 // for loop starting at 1 (beginning of each month), ending based on getNumberOfDays selected month length
 // creating p tags and appending days
     for (let i = 1; i <= getNumberOfDays; i++) {
@@ -43,13 +47,13 @@ function renderCalendar(getNumberOfDays, newYear, newMonth) {
         dayPTag.appendChild(dayText);
         let date = monthName + " " + i.toString() + ", " + newYear
         let dayOfWeek = new Date(date).getDay(); 
-        console.log(dayOfWeek);
+        // console.log(dayOfWeek);
         document.getElementById(dayOfWeek.toString()).appendChild(dayPTag)
     }
 }
 
 function changeMonth(addMinus) {
-    if (addMinus === 'minus') {
+    if (addMinus === 'subtract') {
             if (monthChosen !== 0){
                 monthChosen -= 1;
                 renderCalendar(getNumberOfDays(monthChosen, yearChosen), yearChosen, monthChosen); 
@@ -70,7 +74,7 @@ function changeMonth(addMinus) {
     }
 
 function changeYear(addMinus) {
-    if (addMinus === 'minus') {
+    if (addMinus === 'subtract') {
         yearChosen -= 1;
         renderCalendar(getNumberOfDays(monthChosen, yearChosen), yearChosen, monthChosen);
     } else {
