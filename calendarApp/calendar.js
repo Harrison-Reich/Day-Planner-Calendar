@@ -29,7 +29,7 @@ function getNumberOfDays (year, month) {
 }
 
 // function to render calendar based on previous function (getNumberOfDays) & generate days as p tag elements based on the selected month's length
-function renderCalendar(getNumberOfDays) {
+function renderCalendar(getNumberOfDays, newYear, newMonth) {
     let yearPTag = document.getElementById('year');
     yearPTag.innerText = yearChosen;
     let monthName = months[monthChosen];
@@ -55,10 +55,15 @@ function changeMonth(addMinus) {
                 renderCalendar(getNumberOfDays(monthChosen, yearChosen)); 
             } else {
                 monthChosen === 11;
+                renderCalendar(getNumberOfDays(monthChosen, yearChosen));
+            }
+        } else {
+            if (monthChosen !== 11) {
+                monthChosen += 1;
+                renderCalendar(getNumberOfDays(monthChosen, yearChosen));
+            }
         }
-
     }
-}
 
 function changeYear(addMinus) {
 
