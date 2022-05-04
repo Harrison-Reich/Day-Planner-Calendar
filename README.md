@@ -1,4 +1,4 @@
-# Playground Repository
+# Day Planner and Calendar
 
 ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/Harrison-Reich/practiceStuff?style=flat&logo=appveyor) ![Badge for GitHub commit activity](https://img.shields.io/github/commit-activity/w/Harrison-Reich/practiceStuff?color=purple)
 
@@ -20,10 +20,16 @@
 
     After clicking the save button your task will be saved to local storage until it is cleared.
 
+    
+    Click on a day of the week to have the date displayed at the top of the page. 
+    Use the forward and back arrows located at the beginning and end of the month/year to navigate the calendar to any point in time.
+
 
   ## Questions
 What are some future development ideas associted with the calendarPlanner application?
 
     - The ability to input tasks on future days
     - Create filters for re-ocurring events that can be switched on/off
-    - Responsive calendar with a clean, easy to navigate UI 
+    - Responsive calendar with a clean, easy to navigate UI
+
+    -implement above features into calendar application to have a full functioning calendar.  
