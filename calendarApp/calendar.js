@@ -60,6 +60,9 @@ function renderCalendar(getNumberOfDays, newYear, newMonth) {
         let dayText = document.createTextNode(i.toString());
         dayPTag.appendChild(dayText);
         let date = monthName + " " + i.toString() + ", " + newYear
+        dayPTag.addEventListener('click', function() {
+            return displayDate(date);
+        })
         let dayOfWeek = new Date(date).getDay(); 
         // console.log(dayOfWeek);
         document.getElementById(dayOfWeek.toString()).appendChild(dayPTag)
@@ -97,6 +100,10 @@ function changeYear(addMinus) {
         yearChosen += 1;
         renderCalendar(getNumberOfDays(yearChosen, monthChosen), yearChosen, monthChosen);
     }
+}
+// date display function
+function displayDate(date) {
+    document.getElementById('dateDisplay').innerText = date;
 }
 
 renderCalendar(getNumberOfDays(yearChosen, monthChosen), yearChosen, monthChosen);
