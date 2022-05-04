@@ -35,12 +35,26 @@ function renderCalendar(getNumberOfDays, newYear, newMonth) {
     let monthName = months[newMonth];
     let monthPTag = document.getElementById('month');
     monthPTag.innerText = monthName
+
+    // clear out previous html so the new current month can replace it 
     let dayColumns = document.getElementsByClassName('dayColumn');
     for (let d = 0; d < dayColumns.length; d++) {
         dayColumns[d].innerHTML = ""; 
     }
-// for loop starting at 1 (beginning of each month), ending based on getNumberOfDays selected month length
-// creating p tags and appending days
+
+    // gets first day of the month date
+    let firstDay = monthName + '1,' + newYear;
+    let firstDayOfMonth = new Date(firstDay).getDay();
+    for (let otherIndex = 0; otherIndex < firstDayOfMonth; otherIndex ++ ) {
+        let emptyPTag = document.createElement('p');
+        let emptyText = document.createTextNode(' ');
+        emptyPTag.style.padding = '14px';
+        emptyPTag.appendChild(emptyText);
+        let dayColumn = document.getElementById(otherIndex.toString());
+        dayColumn.appendChild(emptyPTag);
+    }
+    // for loop starting at 1 (beginning of each month), ending based on getNumberOfDays selected month length
+    // creating p tags and appending days
     for (let i = 1; i <= getNumberOfDays; i++) {
         let dayPTag = document.createElement('p');
         let dayText = document.createTextNode(i.toString());
@@ -59,6 +73,7 @@ function changeMonth(addMinus) {
                 renderCalendar(getNumberOfDays(yearChosen, monthChosen), yearChosen, monthChosen); 
             } else {
                 monthChosen = 11;
+                yearChosen -= 1;
                 renderCalendar(getNumberOfDays(yearChosen, monthChosen), yearChosen, monthChosen);
             }
         } else {
@@ -68,6 +83,7 @@ function changeMonth(addMinus) {
             }
             else {
                 monthChosen = 0;
+                yearChosen += 1;
                 renderCalendar(getNumberOfDays(yearChosen, monthChosen), yearChosen, monthChosen);
             }
         }
