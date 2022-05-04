@@ -52,15 +52,15 @@ function changeMonth(addMinus) {
     if (addMinus === 'minus') {
             if (monthChosen !== 0){
                 monthChosen -= 1;
-                renderCalendar(getNumberOfDays(monthChosen, yearChosen)); 
+                renderCalendar(getNumberOfDays(monthChosen, yearChosen), yearChosen, monthChosen); 
             } else {
                 monthChosen === 11;
-                renderCalendar(getNumberOfDays(monthChosen, yearChosen));
+                renderCalendar(getNumberOfDays(monthChosen, yearChosen), yearChosen, monthChosen);
             }
         } else {
             if (monthChosen !== 11) {
                 monthChosen += 1;
-                renderCalendar(getNumberOfDays(monthChosen, yearChosen));
+                renderCalendar(getNumberOfDays(monthChosen, yearChosen), yearChosen, monthChosen);
             }
         }
     }
