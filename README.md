@@ -18,11 +18,13 @@
 
     Select a time slot which you wish to occupy with a task.
 
-    After clicking the save button your task will be saved to local storage until it is cleared.
+    After clicking the save button your task will be saved to local storage until it is cleared
 
     
-    Click on a day of the week to have the date displayed at the top of the page. 
-    Use the forward and back arrows located at the beginning and end of the month/year to navigate the calendar to any point in time.
+    Click on a day of the week to have the date displayed at the top of the page.
+
+    Use the forward and back arrows located at the beginning and end of the month/year
+    to navigate the calendar to any point in time
 
 
   ## Questions
@@ -32,4 +34,4 @@ What are some future development ideas associted with the calendarPlanner applic
     - Create filters for re-ocurring events that can be switched on/off
     - Responsive calendar with a clean, easy to navigate UI
 
-    -implement above features into calendar application to have a full functioning calendar.  
+    -implement above features into calendar application to have a full functioning calendar  
