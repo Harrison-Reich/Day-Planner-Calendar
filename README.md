@@ -1,6 +1,6 @@
 # Day Planner and Calendar
 
-![Badge for GitHub last commit](https://img.shields.io/github/last-commit/Harrison-Reich/practiceStuff?style=flat&logo=appveyor) ![Badge for GitHub commit activity](https://img.shields.io/github/commit-activity/w/Harrison-Reich/practiceStuff?color=purple)
+![Badge for GitHub last commit](https://img.shields.io/github/last-commit/Harrison-Reich/Practice?style=flat&logo=appveyor) ![Badge for GitHub commit activity](https://img.shields.io/github/commit-activity/w/Harrison-Reich/Practice?color=purple)
 
   
   ## Table of Content
@@ -33,5 +33,4 @@ What are some future development ideas associted with the calendarPlanner applic
   - The ability to input tasks on future days
   - Create filters for re-ocurring events that can be switched on/off
   - Responsive calendar with a clean, easy to navigate UI
-
   - Implement above features into calendar application to have a full functioning calendar  
