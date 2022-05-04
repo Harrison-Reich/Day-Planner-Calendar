@@ -58,7 +58,7 @@ function changeMonth(addMinus) {
                 monthChosen -= 1;
                 renderCalendar(getNumberOfDays(monthChosen, yearChosen), yearChosen, monthChosen); 
             } else {
-                monthChosen === 11;
+                monthChosen = 11;
                 renderCalendar(getNumberOfDays(monthChosen, yearChosen), yearChosen, monthChosen);
             }
         } else {
