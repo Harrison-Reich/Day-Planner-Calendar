@@ -56,19 +56,19 @@ function changeMonth(addMinus) {
     if (addMinus === 'subtract') {
             if (monthChosen !== 0){
                 monthChosen -= 1;
-                renderCalendar(getNumberOfDays(monthChosen, yearChosen), yearChosen, monthChosen); 
+                renderCalendar(getNumberOfDays(yearChosen, monthChosen), yearChosen, monthChosen); 
             } else {
                 monthChosen = 11;
-                renderCalendar(getNumberOfDays(monthChosen, yearChosen), yearChosen, monthChosen);
+                renderCalendar(getNumberOfDays(yearChosen, monthChosen), yearChosen, monthChosen);
             }
         } else {
             if (monthChosen !== 11) {
                 monthChosen += 1;
-                renderCalendar(getNumberOfDays(monthChosen, yearChosen), yearChosen, monthChosen);
+                renderCalendar(getNumberOfDays(yearChosen, monthChosen), yearChosen, monthChosen);
             }
             else {
                 monthChosen = 0;
-                renderCalendar(getNumberOfDays(monthChosen, yearChosen), yearChosen, monthChosen);
+                renderCalendar(getNumberOfDays(yearChosen, monthChosen), yearChosen, monthChosen);
             }
         }
     }
@@ -76,10 +76,10 @@ function changeMonth(addMinus) {
 function changeYear(addMinus) {
     if (addMinus === 'subtract') {
         yearChosen -= 1;
-        renderCalendar(getNumberOfDays(monthChosen, yearChosen), yearChosen, monthChosen);
+        renderCalendar(getNumberOfDays(yearChosen, monthChosen), yearChosen, monthChosen);
     } else {
         yearChosen += 1;
-        renderCalendar(getNumberOfDays(monthChosen, yearChosen), yearChosen, monthChosen);
+        renderCalendar(getNumberOfDays(yearChosen, monthChosen), yearChosen, monthChosen);
     }
 }
 
