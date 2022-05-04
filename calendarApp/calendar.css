@@ -24,3 +24,9 @@ span {
     display: flex;
     justify-content: space-around;
 }
+
+.bigDate {
+    position: absolute;
+    top: 50px;
+    left: 47%;
+}
